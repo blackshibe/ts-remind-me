@@ -1,0 +1,6 @@
+.new-button {
+	position: absolute;
+	z-index: 3;
+	top: calc(100% - 84px);
+	left: calc(100% - 84px);
+}

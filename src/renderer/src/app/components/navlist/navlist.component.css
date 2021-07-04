@@ -1,0 +1,20 @@
+.mat-icon {
+	margin-right: 5px;
+	color: white;
+}
+
+a[mat-list-item] {
+	width: 200px;
+}
+
+.special {
+	color: grey;
+}
+
+.noselect {
+	user-select: none;
+}
+
+a {
+	font-family: "Roboto Mono", monospace;
+}

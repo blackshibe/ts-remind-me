@@ -1,0 +1,45 @@
+<mat-card class="list-card">
+	<h3 class="top-header">
+		{{ formattedTimeFromUnixTimestamp(note.creation_time) }}
+		-
+		<input
+			class="due-date"
+			value="{{ formattedTimeFromUnixTimestamp(inputted_time) }}"
+			autocomplete="off"
+			autocorrect="off"
+			autocapitalize="off"
+			spellcheck="false"
+			(input)="dueTimeChanged($event)"
+			(focusout)="dueTimeLostFocus($event)"
+		/>
+	</h3>
+
+	<footer class="due-footer">
+		actually due by {{ formattedTimeFromUnixTimestamp(note.due_time) }}
+	</footer>
+
+	<mat-form-field appearance="fill" class="description-box">
+		<mat-label>note description...</mat-label>
+		<textarea
+			cdkTextareaAutosize
+			matInput
+			(change)="descriptionChanged($event)"
+			(focusout)="focusLost()"
+			>{{ note.description }}</textarea
+		>
+	</mat-form-field>
+
+	<div class="card-holder" *ngIf="note.image_path">
+		<img class="card-image" [src]="note_url" />
+	</div>
+
+	<mat-card-actions class="actions">
+		<button mat-button color="primary" (click)="removeCard()">
+			DELETE
+		</button>
+		<button mat-button (click)="pickImage()">CHANGE IMAGE</button>
+		<button *ngIf="note.image_path" mat-button (click)="removeImage()">
+			REMOVE IMAGE
+		</button>
+	</mat-card-actions>
+</mat-card>

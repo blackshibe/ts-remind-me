@@ -1,0 +1,21 @@
+<mat-nav-list>
+	<a mat-list-item routerLink="/main" (click)="onSidenavClose()">
+		<mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+	</a>
+	<a mat-list-item routerLink="/other" (click)="onSidenavClose()">
+		<mat-icon>note</mat-icon> <span class="nav-caption">Other</span>
+	</a>
+	<a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+		<mat-icon>info</mat-icon> <span class="nav-caption">Info</span>
+	</a>
+	<a mat-list-item routerLink="/settings" (click)="onSidenavClose()">
+		<mat-icon>settings</mat-icon>
+		<span class="nav-caption">Settings</span>
+	</a>
+</mat-nav-list>
+<mat-divider></mat-divider>
+<mat-list>
+	<mat-list-item>
+		<p class="noselect">{{ version }}</p>
+	</mat-list-item>
+</mat-list>

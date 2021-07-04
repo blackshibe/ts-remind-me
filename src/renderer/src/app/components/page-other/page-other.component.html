@@ -1,0 +1,30 @@
+<div class="app-div">
+	<br />
+	<h1>Misc</h1>
+	<p>meant for holding passwords</p>
+
+	<div class="decrypted-holder" *ngIf="decrypted">
+		<mat-form-field appearance="fill" class="description-box">
+			<mat-label>notes...</mat-label>
+			<textarea
+				cdkTextareaAutosize
+				(focusout)="focusLost($event)"
+				matInput
+				>{{ main_note }}</textarea
+			>
+		</mat-form-field>
+	</div>
+
+	<div class="password-entry-holder" *ngIf="!decrypted">
+		<mat-form-field class="password-textbox" appearance="fill">
+			<mat-label>Decryption password</mat-label>
+			<input matInput type="password" />
+		</mat-form-field>
+		<div class="actions">
+			<button mat-flat-button class="decrypt-button" color="primary">
+				DECRYPT
+			</button>
+			<button mat-flat-button>BACKUP & DISCARD</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="app-div">
+	<br />
+	<h1>Main</h1>
+	<p>Your notes</p>
+
+	<div class="pageWrapper space">
+		<ng-container *ngFor="let note of data; index as i">
+			<note-card [note]="note" [index]="i"> </note-card>
+		</ng-container>
+	</div>
+</div>

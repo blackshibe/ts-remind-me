@@ -1,0 +1,54 @@
+mat-card {
+	margin-bottom: 10px;
+}
+
+mat-card-title,
+mat-card-subtitle,
+button {
+	font-family: "Roboto Mono", monospace;
+}
+
+.due-date {
+	all: unset;
+	color: rgb(189, 189, 189);
+	transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-property: margin-left color;
+}
+
+.due-date:hover {
+	color: rgb(250, 188, 73);
+}
+
+.forced-footer {
+	margin-top: -15px;
+	margin-bottom: -15px;
+	color: grey;
+	transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-property: margin-left color;
+}
+
+.forced-footer:hover {
+	padding-left: 5px;
+	color: rgb(250, 188, 73);
+}
+
+.app-div {
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+.card-image {
+	max-width: 100%;
+	max-height: 20%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.actions {
+	margin-top: -10px;
+}
+
+.description-box {
+	font-family: "Roboto Mono";
+	width: 100%;
+}

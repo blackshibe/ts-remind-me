@@ -1,0 +1,77 @@
+mat-card {
+	margin-bottom: 10px;
+	max-width: 600px;
+}
+
+mat-card-title,
+mat-card-subtitle,
+button {
+	font-family: "Roboto Mono", monospace;
+}
+
+.due-date {
+	all: unset;
+	color: rgb(189, 189, 189);
+	transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-property: margin-left color;
+}
+
+.due-date:focus {
+	color: rgb(250, 188, 73);
+}
+
+.forced-footer {
+	color: grey;
+	font-weight: lighter;
+	transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-property: margin-left color;
+}
+
+.forced-footer:hover {
+	color: rgb(250, 188, 73);
+}
+
+.app-div {
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+.card-image {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	object-fit: contain;
+	padding-bottom: 15px;
+}
+
+.card-holder {
+	position: relative;
+	width: calc(100% + 32px);
+	left: -16px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.actions {
+	margin-top: -10px;
+	padding: 4px;
+}
+
+.description-box {
+	font-family: "Roboto Mono";
+	width: 100%;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+.due-footer {
+	color: grey;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+.top-header {
+	margin-top: -5px !important;
+}

@@ -1,0 +1,21 @@
+<div class="app-div">
+	<br />
+
+	<h1>Info</h1>
+
+	<p>
+		angular-electron-boilerplate is a Electron template that can be used as
+		a starting point for building modern x-platform apps.
+	</p>
+	<div style="color: rgb(251, 115, 62)"><p>Replace this.</p></div>
+
+	<ng-container *ngFor="let image of shibeData">
+		<mat-card class="list-card">
+			<p href="{{ image }}" class="header">made by BIack Shibe#4208</p>
+			<div class="frame">
+				<img mat-card-image src="{{ image }}" />
+			</div>
+			<p class="footer"><i>images provided by the shibe.online api</i></p>
+		</mat-card>
+	</ng-container>
+</div>
